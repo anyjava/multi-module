@@ -2,10 +2,9 @@ package dev.anyjava.multimodule.api;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 
 @SpringBootTest(webEnvironment = SpringBootTest.WebEnvironment.NONE)
 public class ApiApplicationTest {
@@ -15,7 +14,7 @@ public class ApiApplicationTest {
 
     @Test
     public void testContext() {
-        assertEquals("anyjava", cuddyId);
+        assertEquals("anyjava-test-api", cuddyId);
 
     }
 }
